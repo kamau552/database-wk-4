@@ -9,7 +9,7 @@ LIMIT 5;
 --output shows the latest 5 payment dates with their total payment amounts.
 
 -- Q2: Write an SQL query to find the average credit limit of each customer from **customers** table.
-SELECT customerName, AVG(creditLimit) AS average_credit_limit
+SELECT customerName, country,  AVG(creditLimit) AS average_credit_limit
 FROM customers
 GROUP BY customerName, country;
 --output shows the average credit limit for each customer grouped by their country.
